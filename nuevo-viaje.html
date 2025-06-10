@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuevo Viaje</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Nuevo Viaje</h1>
+        <a href="index.html" class="volver">← Volver</a>
+    </header>
+
+    <main class="form-container">
+        <form>
+            <label for="nombre">Nombre del viaje:</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="destino">Destino:</label>
+            <input type="text" id="destino" name="destino" required />
+
+            <label for="fechaInicio">Fecha de inicio:</label>
+            <input type="date" id="fechaInicio" name="fechaInicio" required />
+
+            <label for="fechaFin">Fecha de fin:</label>
+            <input type="date" id="fechaFin" name="fechaFin" required />
+
+            <label for="presupuesto">Presupuesto (€):</label>
+            <input type="number" id="presupuesto" name="presupuesto" required />
+
+            <button type="submit">Guardar viaje</button>
+        </form>
+    </main>
+</body>
+
+</html>
