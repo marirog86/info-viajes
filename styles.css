@@ -1,35 +1,54 @@
+
 body {
-    font-family: "Montserrat", sans-serif;
+    /*font-family: "Montserrat", sans-serif;*/
+    font-family: "Roboto Slab", serif;
     margin: 0;
     padding: 0;
     background: #f5f6fa;
 }
 
 header {
-    /*background-color: #2c3e50;*/
     background-color: #00af54ff;
     color: white;
-    padding: 1rem 2rem;
+    /* padding: 1rem 2rem;*/
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: center;
 }
 
+header h1{
+    border: 2px solid #fbaf00ff ;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+header img{
+    width: 100px;
+    height: auto;
+}
+
 button {
-    /*background-color: #3498db;*/
-    background-color:#007cbeff ;
+    /*font-family: "Montserrat", sans-serif;*/
+    font-family: "Roboto Slab", serif;
     color: white;
-    border: none;
+    font-size: 18px ;
+    background-color: #00af54ff;
+    font-weight: bold;
+    border: 2px solid #fbaf00ff;
     padding: 0.5rem 1rem;
     border-radius: 8px;
     cursor: pointer;
+}
+
+button:hover{
+    background-color: #fbaf00ff;
 }
 
 main.viajes-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
-    padding: 2rem;
+    padding:  2rem;
 }
 
 .viaje-card {
@@ -37,8 +56,7 @@ main.viajes-grid {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*background: white;*/
-    background: #ffa3afff;
+    background: #fbaf00ff;
     position: relative;
     overflow: hidden;
     padding: 1rem;
@@ -48,18 +66,33 @@ main.viajes-grid {
 
 .viaje-card h2 {
     margin-top: 0;
+    color: #007cbeff;
+}
+
+.viaje-card p{
+    color: #007cbeff;
+    font-size: 18px;
 }
 
 .viaje-card a {
     text-decoration: none;
-    color: #3498db;
-    /*color: #fbaf00ff;*/
+    color: #007cbeff;
     font-weight: bold;
+    /* background-color: #007cbeff;*/
+    border: 2px solid #007cbeff;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.viaje-card a:hover{
+    background-color: #007cbeff;
+    color: white;
 }
 
 .viaje-card img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     object-fit: cover;
     padding-bottom: 10px;
 
@@ -78,11 +111,44 @@ main.viajes-grid {
 .detalle-presupuesto,
 .detalle-comoir,
 .detalle-dondecomer {
-    /* background: white;*/
-    background: #ffa3afff;
-    padding: 1rem;
+    background: #fbaf00ff;
+    color: rgb(30, 95, 62);
+    padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fecha,
+.hotel,
+.tren,
+.bus,
+.metro,
+.comida,
+.itinerario{
+    display: flex;
+}
+
+.detalle-info a:hover{
+    background-color: rgb(30, 95, 62) ;
+    color: white;
+}
+
+.detalle-info img,
+.detalle-comoir img,
+.detalle-dondecomer img,
+.detalle-actividades img{
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+}
+
+.detalle-info a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(30, 95, 62);
+    border-radius: 8px;
+    border: 2px solid rgb(30, 95, 62);
+    padding: 5px;
 }
 
 .detalle-checklist ul,
